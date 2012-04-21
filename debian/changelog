@@ -1,3 +1,9 @@
+printrun (0.0.12~precise) precise; urgency=low
+
+  * merged from Scott Howard
+
+ -- Richard Ulrich <richi@paraeasy.ch>  Sat, 21 Apr 2012 23:06:00 +0200
+
 printrun (0.0.11~oneiric) oneiric; urgency=low
 
   * merged from kliment
