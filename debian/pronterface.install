@@ -12,3 +12,5 @@ P-face.ico /usr/share/pronterface/
 plater.ico /usr/share/pronterface/
 images/ /usr/share/pronterface/
 locale/ /usr/share/pronterface/
+debian/dist/* /usr/share
+debian/pronterface.desktop /usr/share/applications
