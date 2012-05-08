@@ -1,3 +1,9 @@
+printrun (0.0.13~precise) precise; urgency=low
+
+  * merged pull request from Scott Howard
+
+ -- Richard Ulrich <richi@paraeasy.ch>  Tue, 8 Mai 2012 21:06:00 +0200
+
 printrun (0.0.12~precise) precise; urgency=low
 
   * merged from Scott Howard
