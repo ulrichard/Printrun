@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=Printrun
-Comment=Control program for RepRap 3d printers
+Name=Pronterface
+Comment=Control RepRap 3d printers
 GenericName=RepRap Host
 Exec=/usr/bin/pronterface
-Path=/usr/share/printrun
+Path=/usr/share/pronterface
 Terminal=false
-Icon=/usr/share/printrun/plater.ico
+Icon=pronterface
 Categories=Graphics;Science;Engineering
 Type=Application
 MimeType=application/stl;
