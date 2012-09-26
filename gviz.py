@@ -12,13 +12,17 @@
 # 
 # You should have received a copy of the GNU General Public License
 # along with Printrun.  If not, see <http://www.gnu.org/licenses/>.
-
 import wx,time
 
 class window(wx.Frame):
     def __init__(self,f,size=(600,600),build_dimensions=[200,200,100,0,0,0],grid=(10,50),extrusion_width=0.5):
         wx.Frame.__init__(self,None,title="Gcode view, shift to move view, mousewheel to set layer",size=(size[0],size[1]))
         self.p=gviz(self,size=size,build_dimensions=build_dimensions,grid=grid,extrusion_width=extrusion_width)
+        
+        # Set up a status bar for displaying info  (Jezmy)
+        self.CreateStatusBar(1);
+        self.SetStatusText("Layer number and Z position show here when you scroll");
+        
         s=time.time()
         #print time.time()-s
         self.initpos=[0,0]
@@ -47,13 +51,21 @@ class window(wx.Frame):
         else:
             event.Skip()
     
+
     def key(self, event):
         x=event.GetKeyCode()
+        if event.ShiftDown():
+            cx,cy=self.p.translate
+            if x==wx.WXK_UP:
+                self.p.zoom(cx,cy,1.2)
+            if x==wx.WXK_DOWN:
+                self.p.zoom(cx,cy,1/1.2)
+        else:
+            if x==wx.WXK_UP:
+                self.p.layerup()
+            if x==wx.WXK_DOWN:  
+                self.p.layerdown()
         #print x
-        if x==wx.WXK_UP:
-            self.p.layerup()
-        if x==wx.WXK_DOWN:
-            self.p.layerdown()
     
         #print p.lines.keys()
     def zoom(self, event):
@@ -68,6 +80,7 @@ class window(wx.Frame):
 class gviz(wx.Panel):
     def __init__(self,parent,size=(200,200),build_dimensions=[200,200,100,0,0,0],grid=(10,50),extrusion_width=0.5):
         wx.Panel.__init__(self,parent,-1,size=(size[0],size[1]))
+        self.parent=parent
         self.size=size
         self.build_dimensions=build_dimensions
         self.grid=grid
@@ -114,12 +127,16 @@ class gviz(wx.Panel):
     def layerup(self):
         if(self.layerindex+1<len(self.layers)):
             self.layerindex+=1
+            # Display layer info on statusbar (Jezmy)
+            self.parent.SetStatusText("Layer "+str(self.layerindex +1)+" - Going Up - Z = "+str(self.layers[self.layerindex])+" mm",0)
             self.repaint()
             self.Refresh()
     
     def layerdown(self):
         if(self.layerindex>0):
-            self.layerindex-=1
+            self.layerindex-=1            
+            # Display layer info on statusbar (Jezmy)
+            self.parent.SetStatusText("Layer "+str(self.layerindex + 1)+" - Going Down - Z = "+str(self.layers[self.layerindex])+ " mm",0)
             self.repaint()
             self.Refresh()
     
@@ -275,7 +292,7 @@ class gviz(wx.Panel):
         
         start_pos = self.hilightpos[:] if hilight else self.lastpos[:]
         
-        if gcode[0] == "g1":
+        if gcode[0] in [ "g0", "g1" ]:
             target = _readgcode()
             line = [ _x(start_pos[0]), _y(start_pos[1]), _x(target[0]), _y(target[1]) ]
             if not hilight:
