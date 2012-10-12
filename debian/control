@@ -6,8 +6,10 @@ Build-Depends: python, debhelper
 standards-Version: 3.9.3
 Homepage:
 
-Package: printrun-base
+Package: pronsole
 Architecture: all
+Conflicts: printrun-base
+Replaces: printrun-base
 Depends: ${misc:Depends}, ${python:Depends}, python-serial
 Description: A host software for the RepRap 3d printer. 
  It works well with the teacup firmware and Gen7 electronics.
@@ -18,7 +20,7 @@ Package: pronterface
 Architecture: all
 Conflicts:printrun-gui
 Replaces:printrun-gui
-Depends: ${misc:Depends}, ${python:Depends}, printrun-base (= ${binary:Version}), python-wxgtk2.8, python-tk, sfact, python-pyglet
+Depends: ${misc:Depends}, ${python:Depends}, pronsole (= ${binary:Version}), python-wxgtk2.8, python-tk, sfact, python-pyglet
 Description: A host software for the RepRap 3d printer. 
  It works well with the teacup firmware and Gen7 electronics.
  The gui package contains the graphical user interface.
