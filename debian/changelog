@@ -1,3 +1,9 @@
+printrun (0.0.17~precise) precise; urgency=low
+
+  * renamed package printrun-base to pronsole
+
+ -- Richard Ulrich <richi@paraeasy.ch>  Fri, 12 Oct 2012 21:00:57 +0200
+
 printrun (0.0.16~precise) precise; urgency=low
 
   * added conflicts section to debian/control
