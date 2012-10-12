@@ -1,3 +1,9 @@
+printrun (0.0.16~precise) precise; urgency=low
+
+  * added conflicts section to debian/control
+
+ -- Richard Ulrich <richi@paraeasy.ch>  Tue, 09 Oct 2012 22:02:12 +0200
+
 printrun (0.0.15~precise) precise; urgency=low
 
   * added a new file to the debian/install file

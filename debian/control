@@ -16,6 +16,8 @@ Description: A host software for the RepRap 3d printer.
 
 Package: pronterface
 Architecture: all
+Conflicts:printrun-gui
+Replaces:printrun-gui
 Depends: ${misc:Depends}, ${python:Depends}, printrun-base (= ${binary:Version}), python-wxgtk2.8, python-tk, sfact, python-pyglet
 Description: A host software for the RepRap 3d printer. 
  It works well with the teacup firmware and Gen7 electronics.
