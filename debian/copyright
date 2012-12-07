@@ -30,7 +30,7 @@ License: GPL-2+
  License version 2 can be found in the file
  `/usr/share/common-licenses/GPL-2'.
 
-Files bufferedcanvas.py
+Files: bufferedcanvas.py
 Copyright: 2005, 2006 Daniel Keep
            2011 Duane Johnson
 License: LGPL-2.1+

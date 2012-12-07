@@ -1,28 +1,31 @@
 Source: printrun
 Section: comm
 Priority: optional
-Maintainer: Scott Howard <showard@debian.org>
-Build-Depends: python, debhelper
+Maintainer: Richard Ulrich <richi@paraeasy.ch>
+Build-Depends: python, debhelper (>= 9.0.0)
 standards-Version: 3.9.3
-Homepage:
+Homepage: http://reprap.org/wiki/Printrun
 
 Package: pronsole
 Architecture: all
 Conflicts: printrun-base
 Replaces: printrun-base
 Depends: ${misc:Depends}, ${python:Depends}, python-serial
-Description: A host software for the RepRap 3d printer. 
+Description: A host software for the RepRap 3d printer - console version
  It works well with the teacup firmware and Gen7 electronics.
  The base package contains the commandline client. 
  It can be installed onto a bifferboard or similar that is attached to the RepRap.
+ .
+ This package contains the console program.
 
 Package: pronterface
 Architecture: all
-Conflicts:printrun-gui
-Replaces:printrun-gui
+Conflicts: printrun-gui
+Replaces: printrun-gui
 Depends: ${misc:Depends}, ${python:Depends}, pronsole (= ${binary:Version}), python-wxgtk2.8, python-tk, sfact, python-pyglet
-Description: A host software for the RepRap 3d printer. 
+Description: A host software for the RepRap 3d printer - GUI version
  It works well with the teacup firmware and Gen7 electronics.
  The gui package contains the graphical user interface.
-
+ .
+ This package contains the graphical user interface.
 

@@ -1,3 +1,9 @@
+printrun (0.0.18) unstable; urgency=low
+
+  * Initial packaging for Debian (Closes: #695336)
+
+ -- Richard Ulrich <richi@paraeasy.ch>  Thu, 06 Dec 2012 22:55:51 +0100
+
 printrun (0.0.17~precise) precise; urgency=low
 
   * renamed package printrun-base to pronsole
