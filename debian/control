@@ -11,10 +11,11 @@ Architecture: all
 Conflicts: printrun-base
 Replaces: printrun-base
 Depends: ${misc:Depends}, ${python:Depends}, python-serial
-Description: A host software for the RepRap 3d printer - console version
+Description: Host software for the RepRap 3d printer - console version
  It works well with the teacup firmware and Gen7 electronics.
  The base package contains the commandline client. 
- It can be installed onto a bifferboard or similar that is attached to the RepRap.
+ It can be installed onto a bifferboard or similar that is 
+ attached to the RepRap.
  .
  This package contains the console program.
 
@@ -23,9 +24,18 @@ Architecture: all
 Conflicts: printrun-gui
 Replaces: printrun-gui
 Depends: ${misc:Depends}, ${python:Depends}, pronsole (= ${binary:Version}), python-wxgtk2.8, python-tk, sfact, python-pyglet
-Description: A host software for the RepRap 3d printer - GUI version
+Description: Host software for the RepRap 3d printer - GUI version
  It works well with the teacup firmware and Gen7 electronics.
  The gui package contains the graphical user interface.
  .
  This package contains the graphical user interface.
+
+Package: printrun-web
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, pronterface (= ${binary:Version}), python-cherrypy
+Description: Host software for the RepRap 3d printer - web version
+ It works well with the teacup firmware and Gen7 electronics.
+ The gui package contains the graphical user interface.
+ .
+ This package contains the browser usable remote control for pronterface.
 

@@ -1,8 +1,9 @@
 printrun (0.0.18) unstable; urgency=low
 
   * Initial packaging for Debian (Closes: #695336)
+  * merged from Kliment
 
- -- Richard Ulrich <richi@paraeasy.ch>  Thu, 06 Dec 2012 22:55:51 +0100
+ -- Richard Ulrich <richi@paraeasy.ch>  Fri, 07 Dec 2012 22:05:51 +0100
 
 printrun (0.0.17~precise) precise; urgency=low
 
@@ -27,12 +28,6 @@ printrun (0.0.14~precise) precise; urgency=low
   * building the package with the sfact dependency for precise
 
  -- Richard Ulrich <richi@paraeasy.ch>  Tue, 25 Sep 2012 00:30:42 +0200
-
-printrun (0.0.13~precise) precise; urgency=low
-
-  * merged pull request from Scott Howard
-
- -- Richard Ulrich <richi@paraeasy.ch>  Tue, 8 Mai 2012 21:06:00 +0200
 
 printrun (0.0.12~precise) precise; urgency=low
 

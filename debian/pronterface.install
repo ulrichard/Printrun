@@ -1,17 +1,25 @@
-pronterface.py /usr/share/pronterface/
-SkeinforgeQuickEditDialog.py /usr/share/pronterface/
-stlview.py /usr/share/pronterface/
-xybuttons.py /usr/share/pronterface/
-projectlayer.py /usr/share/pronterface/
-zbuttons.py /usr/share/pronterface/
-zscaper.py /usr/share/pronterface/
-gcview.py /usr/share/pronterface/
-graph.py /usr/share/pronterface/
-gviz.py /usr/share/pronterface/
-plater.py /usr/share/pronterface/
-P-face.ico /usr/share/pronterface/
-plater.ico /usr/share/pronterface/
-images/ /usr/share/pronterface/
-locale/ /usr/share/pronterface/
+pronterface.py /usr/share/printrun/
+plater.py /usr/share/printrun/
+
+printrun/gcview.py /usr/share/printrun/printrun/
+printrun/graph.py /usr/share/printrun/printrun/
+printrun/gui.py /usr/share/printrun/printrun/
+printrun/gviz.py /usr/share/printrun/printrun/
+printrun/projectlayer.py /usr/share/printrun/printrun/
+printrun/pronterface_widgets.py /usr/share/printrun/printrun/
+printrun/SkeinforgeQuickEditDialog.py /usr/share/printrun/printrun/
+printrun/stlview.py /usr/share/printrun/printrun/
+printrun/xybuttons.py /usr/share/printrun/printrun/
+printrun/zbuttons.py /usr/share/printrun/printrun/
+printrun/zscaper.py /usr/share/printrun/printrun/
+
+P-face.ico /usr/share/printrun/
+plater.ico /usr/share/printrun/
+custombtn.txt /usr/share/printrun/
+
+images/ /usr/share/printrun/
+locale/ /usr/share/printrun/
+printrun/svg/ /usr/share/printrun/printrun/
+
 debian/dist/* /usr/share
 debian/pronterface.desktop /usr/share/applications

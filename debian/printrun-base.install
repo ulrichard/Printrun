@@ -1,8 +1,0 @@
-20cube_export.gcode /usr/share/pronterface/
-bufferedcanvas.py /usr/share/pronterface/
-calibrateextruder.py /usr/share/pronterface/
-custombtn.txt /usr/share/pronterface/
-printcore.py /usr/share/pronterface/
-pronsole.ico /usr/share/pronterface/
-pronsole.py /usr/share/pronterface/
-stltool.py /usr/share/pronterface/

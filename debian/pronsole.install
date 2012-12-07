@@ -1,0 +1,14 @@
+pronsole.py /usr/share/printrun/
+gcoder.py /usr/share/printrun/
+printcore.py /usr/share/printrun/
+printrun/stltool.py /usr/share/printrun/printrun/
+
+printrun/bmpDisplay.py /usr/share/printrun/printrun/
+printrun/bufferedcanvas.py /usr/share/printrun/printrun/
+printrun/calibrateextruder.py /usr/share/printrun/printrun/
+printrun/__init__.py /usr/share/printrun/printrun/
+printrun/printrun_utils.py /usr/share/printrun/printrun/
+
+pronsole.ico /usr/share/printrun/
+pronsole.ico /usr/share/printrun/
+

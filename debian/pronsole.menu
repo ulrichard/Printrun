@@ -1,0 +1,6 @@
+?package(pronsole):needs="" \
+	section="Applications/Science/Engineering"    \
+	title="pronsole" \
+	command="pronsole" \
+	icon="pronsole.xpm"
+

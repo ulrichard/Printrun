@@ -1,5 +1,5 @@
-?package(pronterface):needs=X11 \
-	section=Applications/Science/Engineering    \
+?package(pronterface):needs="X11" \
+	section="Applications/Science/Engineering"    \
 	title="pronterface" \
 	command="pronterface" \
 	icon="pronterface.xpm"

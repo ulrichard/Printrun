@@ -1,0 +1,8 @@
+printrun/webinterface.py /usr/share/printrun/printrun/
+
+css/ /usr/share/printrun/
+php/ /usr/share/printrun/
+
+auth.config /etc/printrun/
+http.config /etc/printrun/
+

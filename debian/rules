@@ -14,4 +14,4 @@
 
 override_dh_python2:
 	dh_python2
-	dh_python2 /usr/share/pronterface
+	dh_python2 /usr/share/printrun
