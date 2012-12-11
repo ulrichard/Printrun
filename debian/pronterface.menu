@@ -2,5 +2,12 @@
 	section="Applications/Science/Engineering"    \
 	title="pronterface" \
 	command="pronterface" \
-	icon="pronterface.xpm"
+	icon="pronterface-32.xpm"
+
+?package(pronterface):needs="X11" \
+	section="Applications/Science/Engineering"    \
+	title="plater" \
+	command="plater" \
+	icon="plater-32.xpm"
+
 

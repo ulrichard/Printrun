@@ -1,5 +1,4 @@
 usr/share/printrun/pronterface.py usr/bin/pronterface
-usr/share/printrun/gcview.py usr/bin/gcview
-usr/share/printrun/gviz.py usr/bin/gviz
+#usr/share/printrun/gcview.py usr/bin/gcview
+#usr/share/printrun/gviz.py usr/bin/gviz
 usr/share/printrun/plater.py usr/bin/plater
-usr/share/skeinforge usr/share/printrun/skeinforge

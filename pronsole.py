@@ -26,6 +26,9 @@ import printcore
 from printrun.printrun_utils import install_locale
 install_locale('pronterface')
 
+# debian specific
+os.chdir('/usr/share/printrun')
+
 if os.name == "nt":
     try:
         import _winreg

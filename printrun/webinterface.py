@@ -361,7 +361,7 @@ def KillWebInterfaceThread():
 def StartWebInterfaceThread(webInterface):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     cherrypy.config.update({'engine.autoreload_on':False})
-    cherrypy.config.update(configfile(webInterface.pface.web_config or "http.config"))
+    cherrypy.config.update(configfile(webInterface.pface.web_config or "http.config" or "/etc/printrun/http.config"))
     conf = {'/css/style.css': {'tools.staticfile.on': True,
                       'tools.staticfile.filename': sharedfile('css/style.css'),
                      },
@@ -371,9 +371,9 @@ def StartWebInterfaceThread(webInterface):
              '/images/control_z.png': {'tools.staticfile.on': True,
                       'tools.staticfile.filename': imagefile('control_z.png'),
                      }}
-    cherrypy.config.update(configfile(webInterface.pface.web_config or "http.config"))
+    cherrypy.config.update(configfile(webInterface.pface.web_config or "http.config" or "/etc/printrun/http.config"))
     cherrypy.quickstart(webInterface, '/', config = conf)
 
 if __name__ == '__main__':
-    cherrypy.config.update(configfile("http.config"))
+    cherrypy.config.update(configfile("/etc/printrun/http.config"))
     cherrypy.quickstart(WebInterfaceStub())

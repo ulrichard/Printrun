@@ -20,6 +20,9 @@ import os, Queue, re
 from printrun.printrun_utils import install_locale
 install_locale('pronterface')
 
+# debian specific
+os.chdir('/usr/share/printrun')
+
 try:
     import wx
 except:
@@ -99,7 +102,7 @@ class PronterWindow(MainWindow, pronsole.pronsole):
         self.filename = filename
         os.putenv("UBUNTU_MENUPROXY", "0")
         MainWindow.__init__(self, None, title = _("Printer Interface"), size = size);
-        self.SetIcon(wx.Icon(pixmapfile("/usr/share/pronterface/P-face.ico"), wx.BITMAP_TYPE_ICO))
+        self.SetIcon(wx.Icon(pixmapfile("P-face.ico"), wx.BITMAP_TYPE_ICO))
         self.panel = wx.Panel(self,-1, size = size)
 
         self.statuscheck = False

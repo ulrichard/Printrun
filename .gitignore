@@ -2,3 +2,11 @@
 .pronsolerc
 *.swp
 *.bak
+debian/*.log
+debian/*.debhelper
+debian/*.substvars
+debian/tmp/
+debian/pronsole/
+debian/pronterface/
+debian/printrun-web/
+debian/files

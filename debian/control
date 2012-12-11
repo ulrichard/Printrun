@@ -2,7 +2,7 @@ Source: printrun
 Section: comm
 Priority: optional
 Maintainer: Richard Ulrich <richi@paraeasy.ch>
-Build-Depends: python, debhelper (>= 9.0.0)
+Build-Depends: python, debhelper (>= 9.0.0), imagemagick
 standards-Version: 3.9.3
 Homepage: http://reprap.org/wiki/Printrun
 
