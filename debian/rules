@@ -24,18 +24,21 @@ override_dh_auto_install:
 	convert pronsole.ico -resize 32 debian/pronsole/usr/share/pixmaps/pronsole-32.xpm
 	convert pronsole.ico -resize 64 debian/pronsole/usr/share/pixmaps/pronsole-64.xpm
 
-
 	#icons for pronterface
 	mkdir -p debian/pronterface/usr/share/pixmaps
 	convert P-face.ico -resize 32 debian/pronterface/usr/share/pixmaps/pronterface-32.xpm
 	convert P-face.ico -resize 64 debian/pronterface/usr/share/pixmaps/pronterface-64.xpm
 	mkdir -p debian/pronterface/usr/share/icons/hicolor/32x32/apps
 	mkdir -p debian/pronterface/usr/share/icons/hicolor/64x64/apps
-	convert P-face.ico -resize 32 debian/pronterface/usr/share/icons/hicolor/32x32/apps/pronterface.png
-	convert P-face.ico -resize 64 debian/pronterface/usr/share/icons/hicolor/64x64/apps/pronterface.png
+	convert P-face.ico -resize  32 debian/pronterface/usr/share/icons/hicolor/32x32/apps/pronterface.png
+	convert P-face.ico -resize  48 debian/pronterface/usr/share/icons/hicolor/48x48/apps/pronterface.png
+	convert P-face.ico -resize  64 debian/pronterface/usr/share/icons/hicolor/64x64/apps/pronterface.png
+	convert P-face.ico -resize 128 debian/pronterface/usr/share/icons/hicolor/128x128/apps/pronterface.png
 
-	convert plater.ico -resize 32 debian/pronterface/usr/share/pixmaps/plater-32.xpm
-	convert plater.ico -resize 64 debian/pronterface/usr/share/pixmaps/plater-64.xpm
-	convert plater.ico -resize 32 debian/pronterface/usr/share/icons/hicolor/32x32/apps/plater.png
-	convert plater.ico -resize 64 debian/pronterface/usr/share/icons/hicolor/64x64/apps/plater.png
+	convert plater.ico -resize  32 debian/pronterface/usr/share/pixmaps/plater-32.xpm
+	convert plater.ico -resize  64 debian/pronterface/usr/share/pixmaps/plater-64.xpm
+	convert plater.ico -resize  32 debian/pronterface/usr/share/icons/hicolor/32x32/apps/plater.png
+	convert plater.ico -resize  48 debian/pronterface/usr/share/icons/hicolor/48x48/apps/plater.png
+	convert plater.ico -resize  64 debian/pronterface/usr/share/icons/hicolor/64x64/apps/plater.png
+	convert plater.ico -resize 128 debian/pronterface/usr/share/icons/hicolor/128x128/apps/plater.png
 
