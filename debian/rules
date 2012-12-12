@@ -29,7 +29,9 @@ override_dh_auto_install:
 	convert P-face.ico -resize 32 debian/pronterface/usr/share/pixmaps/pronterface-32.xpm
 	convert P-face.ico -resize 64 debian/pronterface/usr/share/pixmaps/pronterface-64.xpm
 	mkdir -p debian/pronterface/usr/share/icons/hicolor/32x32/apps
+	mkdir -p debian/pronterface/usr/share/icons/hicolor/48x48/apps
 	mkdir -p debian/pronterface/usr/share/icons/hicolor/64x64/apps
+	mkdir -p debian/pronterface/usr/share/icons/hicolor/128x128/apps
 	convert P-face.ico -resize  32 debian/pronterface/usr/share/icons/hicolor/32x32/apps/pronterface.png
 	convert P-face.ico -resize  48 debian/pronterface/usr/share/icons/hicolor/48x48/apps/pronterface.png
 	convert P-face.ico -resize  64 debian/pronterface/usr/share/icons/hicolor/64x64/apps/pronterface.png
