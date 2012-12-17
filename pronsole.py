@@ -26,8 +26,9 @@ import printcore
 from printrun.printrun_utils import install_locale
 install_locale('pronterface')
 
-# debian specific
-os.chdir('/usr/share/printrun')
+# set the current working directory to the script directory, so that the resources can be found.
+os.chdir(os.path.realpath(__file__))
+
 
 if os.name == "nt":
     try:
